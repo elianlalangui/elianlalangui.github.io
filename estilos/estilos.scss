@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@400;600;700&display=swap');
+$colorLetra: #fff;
+
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #1D2742;
+    opacity: 1;
+    background-image:  linear-gradient(#1e222f 1px, transparent 1px), linear-gradient(to right, #1e222f 1px, #1D2742 1px);
+    background-size: 20px 20px;
+    color: $colorLetra;
+    overflow-x: hidden;
+    font-size: 14px;
+    padding: 1rem;
+}
+
+*, *::after, *::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    border: none;
+    outline: none;
+    padding: 0.5rem;
+    border-radius: 5rem;
+    background-color: #203b81;
+    color: $colorLetra;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80px;
+    transition: all ease-in 0.2s;
+}
+
+input[type = "submit"]:hover{
+    background-color: #162e6d;
+}
+
+.container{
+   max-width: 1250px;
+   margin: 0 auto;
+   padding: 1rem 0rem;
+}
+
+input[type = "text"]{
+    padding: 0.5rem 0.3rem;
+    border: none;
+    outline: none;
+    font-family: 'Poppins', serif;
+    border-radius: 1px;
+    background: rgb(230, 230, 230);
+    transition: all ease-in 0.2s;
+}
+
+input[type = "text"]:focus{
+    background-color: $colorLetra;
+}
+
+#campo-1, #campo-2, #campo-3, #campo-4{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+fieldset{
+    display: inline;
+    border: none;
+}
+
+form label:not(#seleccionar-metodo label){
+    font-weight: 500;
+}
+
+#seleccionar-metodo{
+    display: inline-flex;
+    gap: 0.8rem;
+
+    #metodo-1{
+        margin-left: 0.5rem;
+    }
+}
+
+#titulo{
+    text-align: center;
+    height: min-content;
+    display: grid;
+    align-self: center;
+    margin-bottom: 1rem;
+}
+
+#formulario{
+    border: #fff 1px solid;
+    border-radius: 15px;
+    padding: 1rem;
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+#tabla{
+    width: 100%;
+    height: 100%;
+    table-layout: fixed;
+    flex-grow: 2;
+    margin-bottom: 1rem;
+}
+
+th, td {
+    width: auto;
+    word-wrap: break-word;
+}
+
+.tabla-grafico{
+    height: 100%;
+    width: 100%;
+}
+
+#metodo-1, #metodo-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Tabla */
+
+table, th, td{
+    border: solid 1px $colorLetra;
+    text-align: center;
+    font-size: 10px;
+}
+
+/* Gráfica */
+#grafico{
+    background-color: $colorLetra;
+    color: black;
+    height: 250px;
+    display: block;
+    width: 500px;
+    margin: 0 auto;
+    overflow: hidden;
+    min-width: 100px;
+}
+
+@media screen and(max-width: 1120px){
+    #formulario{
+        flex-direction: column;
+    }
+
+    #campo-1, #campo-2, #campo-3{
+        width: 100%;
+
+        input{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and(max-width: 550px){
+
+    #titulo, form{
+        font-size: 10px;
+    }
+    
+    #campo-1, #campo-2, #campo-3{
+        input{
+            height: 20px;
+        }
+    }
+
+    #grafico{
+        width: 90%;
+    }
+}

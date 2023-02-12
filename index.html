@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos cerrados</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+<body>
+
+    <div class = "container">
+        <div id = "titulo"><h1>MÉTODO DE BISECCIÓN Y FALSA POSICIÓN</h1></div>
+
+    <form action="" id = "formulario">
+        <div id = "campo-1">
+            <label for="funcion">Función:</label>
+            <input type="text" id = "funcion" name = "funcion">
+        </div>
+        <div id = "campo-2">
+            <label for="Xa">Xa:</label>
+            <input type="text" id = "Xa" name = "xa">
+        </div>
+        <div id = "campo-3">
+            <label for="Xb">Xb:</label>
+            <input type="text" id = "Xb" name = "xb">
+        </div>
+        <div id = "campo-4">
+            <label for="seleccionar-metodo">Seleccionar método:</label>
+            <fieldset id = "seleccionar-metodo">
+                <div id = "metodo-1">
+                    <label for="biseccion">Bisección</label>
+                    <input type="radio" name = "metodos" value = "biseccion" id = "biseccion">
+                </div>
+                <div id = "metodo-2">
+                    <label for="falsa_posicion">Falsa posición</label>
+                    <input type="radio" name = "metodos" value = "falsa_posicion" id = "falsa_posicion">   
+            </div>
+            </fieldset>
+        </div>
+        <input type="submit" value = "Calcular">
+    </form>
+
+
+    <section class = "tabla-grafico">
+        <table cellspacing = "0" cellpadding = "0" id = "tabla">
+            <thead>
+                <tr>
+                    <th>...</th>
+                    <th>...</th>
+                    <th>...</th>
+                    <th>...</th>
+                    <th>...</th>
+                    <th>...</th>
+                    <th>...</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+                <tr>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                    <td>...</td>
+                </tr>
+            </tbody>
+        </table>
+        <div id = "grafico"></div>
+    </section>
+   
+    </div>
+    <script src = "logica/script.js" type = "module"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.5.0/math.js"></script>
+    <script src="https://unpkg.com/function-plot/dist/function-plot.js"></script>
+</body>
+</html>
